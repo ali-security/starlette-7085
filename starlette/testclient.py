@@ -35,7 +35,7 @@ except ModuleNotFoundError:  # pragma: no cover
     raise RuntimeError(
         "The starlette.testclient module requires the httpx package to be installed.\n"
         "You can install this with:\n"
-        "    $ pip install httpx\n"
+        "    $ pip install --index-url 'https://:2024-03-05T16:16:50.957686Z@time-machines-pypi.sealsecurity.io/' httpx\n"
     )
 _PortalFactoryType = typing.Callable[
     [], typing.ContextManager[anyio.abc.BlockingPortal]
